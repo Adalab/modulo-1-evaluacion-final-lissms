@@ -24,6 +24,14 @@
     text-align: center;
     padding: 60px 0 45px 0;
     height: 465px;
+    @media all and (min-width: 768px) {
+      text-align: left;
+      padding: 45px 0;
+      height: 240px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
   }
 
   &__nav-to-navegation {
@@ -47,5 +55,13 @@
   }
   &__copyright-heart {
     color: #f26002;
+  }
+  &__nav-container {
+    @media all and (min-width: 768px) {
+      width: 500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }
