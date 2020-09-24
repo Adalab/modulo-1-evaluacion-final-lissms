@@ -62,36 +62,69 @@
     color: #f26002;
   }
 }
+/* ___________________________________________ */
+
 .section-two {
   background-color: #eff9ff;
   width: 100%;
   height: 624px;
   text-align: center;
+  @media all and (min-width: 768px) {
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     font-family: $font-titles;
     line-height: 1.25;
-
     padding: 30px 15px 45px 15px;
+
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.73;
+    }
   }
   &__grid-container {
     display: grid;
     grid-template-columns: auto 184px auto;
     grid-template-rows: 3;
     text-align: center;
+
+    @media all and (min-width: 768px) {
+      grid-template-columns: 212.3px 212.3px 212.3px;
+      grid-template-rows: 3;
+      grid-column-gap: 27.7px;
+    }
   }
   &__ut-sed-metus {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    @media all and (min-width: 768px) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
   }
 
   &__curabitur-ac-erat {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    @media all and (min-width: 768px) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
   }
   &__morbi-dictum {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+
+    @media all and (min-width: 768px) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
   }
   &__sub-title {
     font-family: $font-titles;
@@ -105,6 +138,11 @@
     line-height: 1.67;
     padding-bottom: 45px;
     color: #000000;
+    @media all and (min-width: 768px) {
+      height: 68px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
   &__button {
     width: 184px;
@@ -115,5 +153,9 @@
     font-family: $font-main;
     font-size: 20px;
     line-height: 2.25;
+
+    @media all and (min-width: 768px) {
+      margin-top: 60px;
+    }
   }
 }
