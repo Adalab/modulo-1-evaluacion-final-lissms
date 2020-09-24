@@ -31,6 +31,16 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 15px 10px 15px;
+
+    @media all and(min-width:768px) {
+      width: 690px;
+      height: 212px;
+      font-family: $font-titles;
+      font-size: 80px;
+      font-weight: bold;
+      line-height: 1.33;
+      margin: 0 39px 20px 39px;
+    }
   }
   &__title-two {
     width: 290px;
@@ -41,6 +51,12 @@
     font-weight: normal;
     color: $color-white;
     margin-bottom: 45px;
+    @media all and(min-width:768px) {
+      width: 360px;
+      height: 32px;
+      font-family: $font-main;
+      font-size: 24px;
+    }
   }
   &__ico-scroll {
     width: 45px;

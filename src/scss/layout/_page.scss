@@ -4,7 +4,10 @@
 .section-one {
   background-color: #fafafa;
   padding: 30px 15px 45px 15px;
-  height: 376px;
+
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
   &__small {
     width: 90px;
     height: 30px;
@@ -15,16 +18,20 @@
   }
   &__title {
     width: 290px;
-    height: 60px;
     font-family: $font-titles;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.25;
     color: #000000;
     margin-bottom: 15px;
+
+    @media all and (min-width: 768px) {
+      width: 690px;
+      font-size: 26px;
+      line-height: 1.73;
+    }
   }
   &__paragraph {
-    height: 120px;
     font-family: $font-main;
     font-size: 18px;
     font-weight: normal;
@@ -43,6 +50,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
   }
   &__button-go-link {
     font-family: $font-main;
