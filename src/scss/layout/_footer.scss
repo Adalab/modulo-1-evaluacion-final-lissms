@@ -18,6 +18,18 @@
     transform: translateX(
       -22.5px
     ); /* division del diametro del circulo entre dos */
+    animation: movement infinite 3s;
+    @keyframes movement {
+      0% {
+        top: -41.5px;
+      }
+      50% {
+        top: -22.5px;
+      }
+      100% {
+        top: -41.5px;
+      }
+    }
   }
   &__container {
     color: white;

@@ -62,12 +62,19 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    transition: all ease 1s;
 
     @media all and (min-width: 768px) {
       width: 91px;
     }
     @media all and (min-width: 1200px) {
       width: 160px;
+      &:hover {
+        border: solid #0271bc 3px;
+        background-color: #eff9ff;
+        width: 200px;
+        height: 50px;
+      }
     }
   }
   &__button-go-link {
@@ -75,6 +82,7 @@
     font-size: 20px;
     line-height: 2.25;
     color: #f26002;
+    padding: 0 50px;
   }
 }
 /* ___________________________________________ */
@@ -101,6 +109,7 @@
     font-family: $font-titles;
     line-height: 1.25;
     padding: 30px 15px 45px 15px;
+    transition: ease-in-out 1.5s all;
 
     @media all and (min-width: 768px) {
       font-size: 26px;
@@ -109,6 +118,10 @@
     @media all and (min-width: 1200px) {
       font-size: 32px;
       line-height: 1.41;
+      &:hover {
+        font-size: 38px;
+        color: #0271bc;
+      }
     }
   }
   &__grid-container {
