@@ -4,6 +4,7 @@
 .section-one {
   background-color: #fafafa;
   padding: 30px 15px 45px 15px;
+  height: 376px;
   &__small {
     width: 90px;
     height: 30px;
@@ -49,5 +50,23 @@
     font-size: 20px;
     line-height: 2.25;
     color: #f26002;
+  }
+}
+.section-two {
+  background-color: #eff9ff;
+  width: 100%;
+  height: 624px;
+  &__title {
+    width: 290px;
+    height: 30px;
+    font-family: $font-titles;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
   }
 }
