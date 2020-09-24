@@ -1,12 +1,12 @@
-.main {
-  background-color: cadetblue;
-}
 .section-one {
   background-color: #fafafa;
   padding: 30px 15px 45px 15px;
 
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 60px 275px;
   }
   &__small {
     width: 90px;
@@ -15,6 +15,9 @@
     font-size: 14px;
     line-height: 2.14;
     color: #8ccbea;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &__title {
     width: 290px;
@@ -30,6 +33,10 @@
       font-size: 26px;
       line-height: 1.73;
     }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+      line-height: 1.41;
+    }
   }
   &__paragraph {
     font-family: $font-main;
@@ -40,6 +47,11 @@
     line-height: 1.67;
     letter-spacing: normal;
     color: #4a4a4a;
+    @media all and (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 1.5;
+      width: 730px;
+    }
   }
   &__button-go {
     width: 76px;
@@ -53,6 +65,9 @@
 
     @media all and (min-width: 768px) {
       width: 91px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
     }
   }
   &__button-go-link {
@@ -75,6 +90,12 @@
     flex-direction: column;
     align-items: center;
   }
+  @media all and (min-width: 1200px) {
+    height: 427px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     font-family: $font-titles;
@@ -85,6 +106,10 @@
       font-size: 26px;
       line-height: 1.73;
     }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+      line-height: 1.41;
+    }
   }
   &__grid-container {
     display: grid;
@@ -94,6 +119,11 @@
 
     @media all and (min-width: 768px) {
       grid-template-columns: 212.3px 212.3px 212.3px;
+      grid-template-rows: 3;
+      grid-column-gap: 27.7px;
+    }
+    @media all and (min-width: 1200px) {
+      grid-template-columns: 350px 350px 350px;
       grid-template-rows: 3;
       grid-column-gap: 27.7px;
     }
@@ -131,6 +161,13 @@
     font-size: 18px;
     line-height: 1.67;
     height: 30px;
+    @media all and (min-width: 768px) {
+      margin-bottom: 14px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
   }
   &__reasons {
     font-family: $font-main;
@@ -156,6 +193,9 @@
 
     @media all and (min-width: 768px) {
       margin-top: 60px;
+    }
+    @media all and (min-width: 768px) {
+      width: 255px;
     }
   }
 }

@@ -41,6 +41,12 @@
       line-height: 1.33;
       margin: 0 39px 20px 39px;
     }
+    @media all and(min-width:12001200px) {
+      width: 730px;
+      height: 264px;
+      font-size: 100px;
+      line-height: 1.32;
+    }
   }
   &__title-two {
     width: 290px;
