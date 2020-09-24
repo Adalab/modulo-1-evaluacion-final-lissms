@@ -1,3 +1,49 @@
 .footer {
-  background-color: #fabada;
+  background-color: #304268;
+
+  &__boton-to-header {
+    width: 45px;
+    height: 45px;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: -22.5px;
+    transform: translateX(
+      -22.5px
+    ); /* division del diametro del circulo entre dos */
+  }
+  &__container {
+    height: 465px;
+    color: white;
+    text-align: center;
+  }
+  &__nav-container {
+    height: 278px; /* suma del alto de cada uno de ellos mas el margen entre uno y otro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__link {
+    font-family: $font-main;
+    line-height: 1.88;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+  &__copyright {
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 2.14;
+    color: $color-white;
+    margin-bottom: 45px;
+  }
+  &__copyright__love {
+    text-transform: lowercase;
+  }
+  &__copyright-heart {
+    color: #f26002;
+  }
 }
