@@ -65,7 +65,9 @@
     font-size: 14px;
     line-height: 2.14;
     color: $color-white;
-    width: 153px;
+    @media all and (min-width: 1200px) {
+      width: 153px;
+    }
   }
   &__copyright__love {
     text-transform: lowercase;

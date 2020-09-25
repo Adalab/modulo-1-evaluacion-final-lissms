@@ -27,6 +27,7 @@
     line-height: 1.25;
     color: #000000;
     margin-bottom: 15px;
+    text-transform: capitalize;
 
     @media all and (min-width: 768px) {
       width: 690px;
@@ -108,7 +109,7 @@
     font-family: $font-titles;
     line-height: 1.25;
     padding: 30px 15px 45px 15px;
-    transition: ease-in-out 1.5s all;
+    text-transform: capitalize;
 
     @media all and (min-width: 768px) {
       font-size: 26px;
@@ -117,9 +118,6 @@
     @media all and (min-width: 1200px) {
       font-size: 32px;
       line-height: 1.41;
-      &:hover {
-        color: #0271bc;
-      }
     }
   }
   &__grid-container {
@@ -202,12 +200,17 @@
     font-family: $font-main;
     font-size: 20px;
     line-height: 2.25;
+    transition: ease-in-out 1s all;
 
     @media all and (min-width: 768px) {
       margin-top: 60px;
     }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 1200px) {
       width: 255px;
+      &:hover {
+        background-color: #0271bc;
+        width: 300px;
+      }
     }
   }
 }
