@@ -127,7 +127,7 @@
     text-align: center;
 
     @media all and (min-width: 768px) {
-      grid-template-columns: 212.3px 212.3px 212.3px;
+      grid-template-columns: 212.3px 200.3px 212.3px;
       grid-template-rows: 3;
       grid-column-gap: 27.7px;
     }
@@ -172,6 +172,7 @@
     height: 30px;
     @media all and (min-width: 768px) {
       margin-bottom: 14px;
+      font-size: 24px;
     }
     @media all and (min-width: 1200px) {
       font-size: 24px;
