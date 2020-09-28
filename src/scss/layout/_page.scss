@@ -122,11 +122,13 @@
   }
   &__grid-container {
     display: grid;
-    grid-template-columns: auto 184px auto;
-    grid-template-rows: 3;
+    grid-template-areas: "a b c";
+    grid-template-columns: 221px 200px 221px;
+    grid-gap: 27px;
+    grid-template-rows: auto auto auto;
     text-align: center;
 
-    @media all and (min-width: 768px) {
+    /*     @media all and (min-width: 768px) {
       grid-template-columns: 212.3px 200.3px 212.3px;
       grid-template-rows: 3;
       grid-column-gap: 27.7px;
@@ -135,35 +137,38 @@
       grid-template-columns: 350px 350px 350px;
       grid-template-rows: 3;
       grid-column-gap: 27.7px;
-    }
+    } */
   }
   &__ut-sed-metus {
-    grid-column: 2 / 3;
+    grid-area: a;
+    /*     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
     @media all and (min-width: 768px) {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-    }
+    } */
   }
 
   &__curabitur-ac-erat {
-    grid-column: 2 / 3;
+    grid-area: b;
+    /*    grid-column: 2 / 3;
     grid-row: 2 / 3;
 
     @media all and (min-width: 768px) {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
-    }
+    } */
   }
   &__morbi-dictum {
-    grid-column: 2 / 3;
+    grid-area: c;
+    /*  grid-column: 2 / 3;
     grid-row: 3 / 4;
 
     @media all and (min-width: 768px) {
       grid-column: 3 / 4;
       grid-row: 1 / 2;
-    }
+    } */
   }
   &__sub-title {
     font-family: $font-titles;
@@ -212,6 +217,23 @@
         background-color: #0271bc;
         width: 300px;
       }
+    }
+  }
+}
+.section-1-2 {
+  width: 100%;
+  background-color: #304268;
+  color: $color-white;
+  &__pricing {
+    text-align: center;
+  }
+  @media all and (min-width: 768px) {
+    &__sub-title {
+      display: flex;
+      justify-content: center;
+    }
+    &__plan {
+      margin: 0 30px;
     }
   }
 }
